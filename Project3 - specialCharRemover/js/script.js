@@ -4,7 +4,7 @@ function removeSpecialCharacters(){
     const inputString = document.getElementById('inputString').value;
 
     //use regex (regular expressions) to look for any character which are not a numbers alphabet letters
-    const regex = /[^a-zA-Z0-9]/g;
+    const regex = /[^a-zA-Z 0-9]/g;
 
     // this removes all instances of characters which are not part of the regex 
     const cleanString = inputString.replace(regex, '');
