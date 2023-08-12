@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/d9d7c610bb.js" crossorigin="anonymous"></script>
+    <title> // duplicateRemover </title>
+</head>
+
+<body class="container">
+
+    <div class="app">
+
+        <h2 class="app-head">
+            Removing Duplicates with JS
+        </h2>
+
+        <div class="app-main">
+            <label for="text"><h2>Enter your text:</h2></label>
+            <input class="form-control" type="text" id="inputString" placeholder="What do you need cleaned?">
+
+            <button class="btn btn-danger" onclick="removeSpecialCharacters()">
+                Remove
+            </button>
+    
+            <div class="output-wrapper">
+                <h2>Cleaned Output: </h2>
+                <div id="output"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
