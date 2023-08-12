@@ -19,19 +19,20 @@
 
         <div class="app-main">
             <label for="text"><h2>Enter your text:</h2></label>
-            <input class="form-control" type="text" id="inputString" placeholder="What do you need cleaned?">
+            <input class="form-control" type="text" id="inputArray" placeholder="Enter the list to be cleaned ...">
 
-            <button class="btn btn-danger" onclick="removeSpecialCharacters()">
-                Remove
+            <button class="btn btn-danger" onclick="removeDuplicates()">
+                Remove Duplicates
             </button>
     
             <div class="output-wrapper">
                 <h2>Cleaned Output: </h2>
-                <div id="output"></div>
+                <div id="outputArray"></div>
             </div>
         </div>
     </div>
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
