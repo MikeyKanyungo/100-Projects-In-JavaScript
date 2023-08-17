@@ -1,13 +1,22 @@
         // this function converts binary to text
         function binaryToText(binary) {
             let text = " ";
-            binary.split(" ").forEach(function (bin) {
+
+            // this splits the string into 8-bit characters 
+            const binarySplits = binary.match(/.{1,8}/g);
+            
+
+            // this checks each group of 8-bits and converts it into letters of the English alphabet
+            binarySplits.forEach(function (bin) {
                 const decimal = parseInt(bin, 2);
                 text += String.fromCharCode(decimal);
             }); 
-
+            
             return text;
         }        
+
+
+        
 
         // this function converts from text to binary
         function textToBinary (text) {
@@ -23,13 +32,14 @@
 
 
         document.getElementById("translateBtn").addEventListener("click", function (){
+
             const inputElement = document.getElementById("input");
             const outputElement = document.getElementById("output");
             const input = inputElement.value.trim();
 
             if (/^[01\s]+$/.test(input)) { 
                 // the above regex (regular expression) checks if the input field 
-                // contains only 0s and 1s and spaces. if it does, treat it as binary
+                // contains only 0s, 1s and spaces. if it does, treat it as binary.
                 const text = binaryToText(input);
                 outputElement.textContent = "Translated Text: " + text;
             } 
