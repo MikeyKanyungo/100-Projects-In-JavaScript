@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/script.js"></script>
+    <title>JS Modal</title>
+</head>
+<body class="container" style="background-image: url(assets/img/bg-1.jpg);">
+
+    <section class="modal hidden">
+        <div class="flex">
+          <img class="avatar" src="assets/img/avatar.jpg" width="100px" height="100px" alt="user" />
+          <button class="btn-close">⨉</button>
+        </div>
+
+        <!-- your modal content goes here -->
+        <p><h1>Hi ... </h1></p>
+        <P>My name is <b>Mikey Dzawanda Kanyungo.</b></P>
+        <p>I am a software engineer</p>
+        <p>Get in touch with me here:</p>
+
+        <span class="icons">
+          <a href="https://github.com/MikeyKanyungo">
+            <i class="fa-brands fa-github fa-2xl" style="color: #000000; display: inline-flex;"></i>
+          </a>
+
+          <a href="https://twitter.com/DzawandaMK">
+            <i class="fa-brands fa-square-x-twitter fa-2xl" style="color: #000000; display: inline-flex;"></i>
+          </a>
+        </span>
+        
+        <input type="text" placeholder="your message here ...">
+        <button class="btn">Send</button>
+    </section>
+      
+    <div class="overlay hidden"></div>
+    <button class="btn btn-open">View me.</button>  
+</body>
+<script src="https://kit.fontawesome.com/d9d7c610bb.js" crossorigin="anonymous"></script>
+</html>
