@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+
+<div class="bg-white p-8 rounded-lg shadow-md w-96">
+    <h1 class="text-2xl font-semibold mb-4">Caesar Cipher</h1>
+
+    <label for="inputText" class="block text-sm font-medium text-gray-600 mb-2">Enter your message:</label>
+    <textarea id="inputText" class="w-full p-2 mb-4 border rounded" rows="4"></textarea>
+
+    <label for="shiftValue" class="block text-sm font-medium text-gray-600 mb-2">Enter shift value:</label>
+    <input type="number" id="shiftValue" class="w-full p-2 mb-4 border rounded" />
+
+    <div class="flex space-x-4">
+        <button onclick="encode()" class="w-1/2 bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Encode</button>
+        <button onclick="decode()" class="w-1/2 bg-red-500 text-white p-2 rounded hover:bg-red-600">Decode</button>
+    </div>
+
+    <label for="outputText" class="block text-sm font-medium text-gray-600 mt-4 mb-2">Result:</label>
+    <textarea id="outputText" class="w-full p-2 border rounded" rows="4" readonly></textarea>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
