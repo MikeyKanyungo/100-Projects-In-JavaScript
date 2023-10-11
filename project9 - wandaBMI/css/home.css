@@ -19,6 +19,9 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; /* If you want to center inline content */
 }
+.home-text {
+    font-size: 14px;
+}
 .home-btn {
     width: 100%;
     height: 50px;
