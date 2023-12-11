@@ -33,7 +33,7 @@ body {
 }
 
 .card-group[data-status="before"]{
-    transform: translateX(50%) scale(0);
+    transform: translateX(-50%) scale(0);
 }
 
 .card-group[data-status="becoming-active-from-after"]{
@@ -42,7 +42,7 @@ body {
 }
 
 .card-group[data-status="becoming-active-from-before"]{
-    transform: translateX(50%) scale(0);
+    transform: translateX(-50%) scale(0);
     transition: none;
 }
 
@@ -69,59 +69,60 @@ body {
 }
 
 .large-card:nth-child(2){
-    background-image: url();
+    background-image: url(img/large_card\ \(1\).jpg);
     transform: translateX(-10%) rotate(-1deg);
 }
 
 .large-card:nth-child(4){
-    background-image: url();
+    background-image: url(img/large_card\ \(2\).jpg);
     transform: rotate(2deg);
 }
 
 .large-card:nth-child(6){
-    background-image: url();
+    background-image: url(img/large_card\ \(3\).jpg);
     transform: translateX(-6deg) rotate(-3deg);
 }
 
 .large-card:nth-child(8){
-    background-image: url();
+    background-image: url(img/large_card\ \(3\).jpg);
     transform: translate(10%, 3%) rotate(5deg);
 }
 
 .card-group[data-index="1"] > .large-card:nth-child(6){
-    background-image: url();
+    background-image: url(img/large_card\ \(1\).jpg);
 }
 
 .card-group[data-index="1"] > .large-card:nth-child(8){
-    background-image: url();
+    background-image: url(img/large_card\ \(2\).jpg);
 }
 
 .card-group[data-index="2"] > .large-card:nth-child(4){
-    background-image: url();
+    background-image: url(img/large_card\ \(3\).jpg);
 }
 
 .card-group[data-index="2"] > .large-card:nth-child(8){
-    background-image: url();
+    background-image: url(img/large_card\ \(4\).jpg);
 }
 
 .small-card:nth-child(1) {
-    background-image: url();
+    background-image: url(img/small_card\ \(1\).jpg);
 }
 
 .small-card:nth-child(3) {
-    background-image: url();
+    background-image: url(img/small_card\ \(2\).jpg);
 }
 
 .small-card:nth-child(5) {
-    background-image: url();
+    background-image: url(img/small_card\ \(3\).jpg);
 }
 
 .small-card:nth-child(7) {
-    background-image: url();
+    background-image: url(img/small_card\ \(4\).jpg);
 }
 
 .card-group:hover > .card {
     box-shadow: -2vmin 2vmin 3vmin rgba(0, 0, 0, 0.4);
+    
 }
 
 .card-group:hover > .large-card:nth-child(2) {
