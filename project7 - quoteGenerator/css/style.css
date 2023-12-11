@@ -1,13 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 .container {
-    text-align: center;
     position: absolute;
-    top: 10%;
-    right: 0%;
-    transform: translate(10%, 10%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
 }
 
 .main {
+    align-items: center;
     width: 100vh;
     height: min-content;
     border: 1px solid #f5deb3;
@@ -19,7 +24,7 @@
 .generate-btn {
     background-color:#f5deb3;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 40%;
     padding: 10px;
     font-size: 16px;
@@ -29,6 +34,11 @@
 
 .generate-btn:hover {
     width: 50%;
-    background-color: #f5c66f;
+    background-color: white;
     border: 1px solid #a16b06;
+}
+
+.author-name {
+    padding: 10px;
+    margin: 30px;
 }

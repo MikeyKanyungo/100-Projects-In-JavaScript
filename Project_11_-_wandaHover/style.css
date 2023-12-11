@@ -1,0 +1,230 @@
+body {
+    background-color:#000;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.groups, .card-group, .card {
+    aspect-ratio: 5 / 7;
+}
+
+.groups, .card-group, .large-card {
+    width: 30vmin;
+}
+
+.card-group {
+    position: absolute;
+    transition: transform 400ms ease;
+}
+
+.card-group[data-status="unknown"] {
+    transform: scale(0);
+    transform: none;
+}
+
+.card-group[data-status="active"] {
+    transition-delay: 300ms;
+}
+
+.card-group[data-status="after"]{
+    transform: translateX(50%) scale(0);
+}
+
+.card-group[data-status="before"]{
+    transform: translateX(50%) scale(0);
+}
+
+.card-group[data-status="becoming-active-from-after"]{
+    transform: translateX(50%) scale(0);
+    transition: none;
+}
+
+.card-group[data-status="becoming-active-from-before"]{
+    transform: translateX(50%) scale(0);
+    transition: none;
+}
+
+.card {
+    background-color: #ffffff0d;
+    position: absolute;
+    transition: transform 800ms cubic-bezier(.05, .43, .25, .95);
+    background-position: center;
+    background-size: cover;
+}
+
+.large-card {
+    border-radius: 1vmin;
+}
+
+.small-card {
+    width: 12vmin;
+    border-radius: 2vmin;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: -1vmin 1vmin 2vmin rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+}
+
+.large-card:nth-child(2){
+    background-image: url();
+    transform: translateX(-10%) rotate(-1deg);
+}
+
+.large-card:nth-child(4){
+    background-image: url();
+    transform: rotate(2deg);
+}
+
+.large-card:nth-child(6){
+    background-image: url();
+    transform: translateX(-6deg) rotate(-3deg);
+}
+
+.large-card:nth-child(8){
+    background-image: url();
+    transform: translate(10%, 3%) rotate(5deg);
+}
+
+.card-group[data-index="1"] > .large-card:nth-child(6){
+    background-image: url();
+}
+
+.card-group[data-index="1"] > .large-card:nth-child(8){
+    background-image: url();
+}
+
+.card-group[data-index="2"] > .large-card:nth-child(4){
+    background-image: url();
+}
+
+.card-group[data-index="2"] > .large-card:nth-child(8){
+    background-image: url();
+}
+
+.small-card:nth-child(1) {
+    background-image: url();
+}
+
+.small-card:nth-child(3) {
+    background-image: url();
+}
+
+.small-card:nth-child(5) {
+    background-image: url();
+}
+
+.small-card:nth-child(7) {
+    background-image: url();
+}
+
+.card-group:hover > .card {
+    box-shadow: -2vmin 2vmin 3vmin rgba(0, 0, 0, 0.4);
+}
+
+.card-group:hover > .large-card:nth-child(2) {
+    transform: translate(-75%, 16%) rotate(-24deg);
+}
+
+.card-group:hover > .large-card:nth-child(4) {
+    transform: translate(-25%, 8%) rotate(-8deg);
+}
+
+.card-group:hover > .large-card:nth-child(6) {
+    transform: translate(25%, 8%) rotate(8deg);
+}
+
+.card-group:hover > .large-card:nth-child(8) {
+    transform: translate(75%, 16%) rotate(24deg);
+}
+
+.card-group:hover > .small-card:nth-child(1) {
+    transform: translate(200%, -160%) rotate(-15deg);
+  }
+  
+.card-group:hover > .small-card:nth-child(3) {
+    transform: translate(160%, 170%) rotate(15deg);
+}
+  
+.card-group:hover > .small-card:nth-child(5) {
+    transform: translate(-200%, -170%) rotate(15deg);
+}
+  
+.card-group:hover > .small-card:nth-child(7) {
+    transform: translate(-280%, 140%) rotate(-15deg);
+}
+
+.swiper-buttons {
+    margin-top: 8vmin;
+    display: flex;
+    justify-content: space-around;
+    padding: 0vmin 4vmin;
+}
+
+.swiper-buttons > button {
+    font-size: 2.5vmin;
+    border: 0.4vmin solid rgb(200, 200, 200);
+    border-radius: 100%;
+    color: white;
+    background-color: transparent;
+    height: 7vmin;
+    width: 7vmin;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+#love-button {
+    color: #2196f3;
+    border-color: #2196f3;
+}
+
+body.menu-toggled > .meta-link > span {
+    color: #1e1e1e;
+}
+  
+#source-link {
+  bottom: 60px;
+}
+  
+#source-link > i {
+  color: #5e6ad2;
+}
+  
+  
+.meta-link {
+   align-items: center;
+   backdrop-filter: blur(3px);
+   background-color: #ffffff0d;
+   border: 2px solid #2196f3;
+   border-radius: 6px;
+   bottom: 10px;
+   box-shadow: 2px 2px 2px #0000001a;
+   cursor: pointer;  
+   display: inline-flex;
+   gap: 5px;
+   left: 10px;
+   padding: 10px 20px;
+   position: fixed;
+   text-decoration: none;
+   transition: background-color 400ms, border-color 400ms;
+   z-index: 10000;
+}
+  
+.meta-link:hover {
+  background-color:#2196f3;
+  color: #000;
+}
+  
+.meta-link > i, .meta-link > span {
+   height: 20px;
+   line-height: 20px;
+}
+  
+.meta-link > span {
+   color: #ffffff;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-weight: 500;
+} 
